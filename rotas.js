@@ -1,11 +1,11 @@
 const express = require('express');
-const { getProdutos, 
-        detalharCarrinho, 
+const {getProdutos} = require('./controladores/produtos');
+const {detalharCarrinho, 
         addAoCarrinho, 
         editarQtdNoCarrinho, 
         excluirProdutoDoCarrinho,
         deleteLimparCarrinho,
-        finalizarCompra} = require('./controladores/produtos');
+        finalizarCompra} = require('./controladores/carrinho');
 
 const rotas = express();
 
